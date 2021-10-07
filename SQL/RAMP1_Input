@@ -1,0 +1,23 @@
+create table RAMP1_input(
+is_completed int default 0,
+UUID char(36) unique not null,
+evaluation_date varchar(255),
+work_task varchar(255),
+work_station varchar(255),
+work_department varchar(255),
+work_location varchar(255),
+country varchar(255),
+orderer_name varchar(255),
+orderer_title varchar(255),
+user_name varchar(255),
+user_title varchar(255),
+company_representative_name varchar(255),
+company_representative_title varchar(255),
+safety_representative_name varchar(255),
+safety_representative_title varchar(255),
+other_representative_name varchar(255),
+other_representative_title varchar(255),
+other_information varchar(255),
+eval_refers_to int,
+primary key(UUID)
+);

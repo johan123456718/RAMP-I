@@ -1,0 +1,43 @@
+create table Ramp1_Suggestion_Question(
+Suggestion_Question_Nr int auto_increment,
+Suggestion_Question_Title varchar(255),
+Suggestion_Category_Nr int not null,
+primary key(Suggestion_Question_Nr),
+foreign key(Suggestion_Category_Nr) references Ramp1_Suggestion_Category(Suggestion_Category_Nr)
+);
+
+insert into Ramp1_Suggestion_Question(
+Suggestion_Question_Title,
+Suggestion_Category_Nr
+)values('', 1
+);
+
+
+
+insert into ramp1_Suggestion_Question(
+Suggestion_Question_Title,
+Suggestion_Category_Nr
+)values('3.1 Lyfta lasters vikt överskrider 25 kg', 2
+);
+
+insert into ramp1_Suggestion_Question(
+Suggestion_Question_Title,
+Suggestion_Category_Nr
+)values('4.2 Utövad kraft - igångsättningskraft/ kontinuerlig kraft', 3
+);
+
+
+insert into ramp1_Suggestion_Question(
+Suggestion_Question_Title,
+Suggestion_Category_Nr
+)values('5.1 Fysiska faktorer hand/arm: arbete med handhållna vibrerande verktyg
+', 4
+);
+
+
+insert into ramp1_Suggestion_Question(
+Suggestion_Question_Title,
+Suggestion_Category_Nr
+)values('5.2 Andra fysiska faktorer: arbetstagaren utsätts för helkroppsvibrationer
+', 4
+);

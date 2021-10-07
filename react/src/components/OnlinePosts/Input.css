@@ -1,0 +1,149 @@
+
+/*Authors: Emil Fjellström, Johan Challita*/
+
+.label-input-text{
+  float: left;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.label-input-box{
+  float: left;
+  width: 32%;
+}
+
+.itemText{
+    font-size: 20;
+    color: black;
+    font-weight: bold;
+}
+
+.mobileButton{
+  width: 25%;
+  margin: 0;
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 15px ! important;
+}
+
+.mobileButtonDELUX{
+  width: 10%;
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 15px ! important;
+}
+.input-alert-green{
+  padding: 5px;
+  margin: 0;
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #4BB543;
+  box-shadow: none;
+}
+
+.input-alert-red{
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: #f8d7da;
+}
+
+.input-alert{
+  padding: 5px;
+  margin: 0;
+  position: relative;
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: #d1ecf1;
+}
+.flex-input-spacer{
+  margin-bottom: 100px;
+}
+.flex-grid-input-footer {
+  display: block;
+  max-height: 75px;
+  background-color: #dce6f1;
+}
+
+.input-card-body{
+  padding: 5px;
+}
+.input-button-grp-single{
+  padding-left: 5px;
+  display: 1;
+  min-width: 5%
+}
+.flex-grid-input-footer .input-footer{
+  display: flex;
+  position: fixed;
+  padding: 5px;
+  overflow: hidden;
+  background: #b8cce4;
+  width:100%;
+  max-height: 100%;
+  bottom : 0;
+  left: 0;
+  right: 0;
+}
+
+.flex-grid-input {
+  display: flex;
+  background-color: white;
+}
+.flex-grid-input .col-flex-input{
+  flex: 1;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+}
+.flex-grid-input .col-flex-input-date{
+  flex: 1;
+  width: 100%;
+  max-width: 200px;
+  background-color: white;
+}
+.flex-grid-input .col-flex-input-button{
+  flex: 1;
+  width: 100%;
+  min-width: 100px;
+  min-height: 50px;
+  background-color: white;
+  align-items: center;
+}
+
+.inputButtonText{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  .flex-grid-input-footer {
+    display: block;
+  }.mobileButton{
+    width: 50%;
+  }
+  .mobileButtonDELUX{
+    margin-left: 10px;
+    width: 100%;
+  }
+  .input-button-grp-single{
+    padding-left: 0 ;
+    width: 25%;
+  }
+  .flex-grid-input{
+    display: block;
+  }
+  .flex-grid-input .col-flex-input-date{
+    max-width: none;
+  }
+  .flex-grid-input .col-flex-input-button{
+    min-height: 90px;
+  }
+}

@@ -1,0 +1,9 @@
+create table RAMP1_Answers(
+UUID char(36),
+Question_Nr int NOT NULL,
+-- 0 = unanswered, 1 = yes, 2 = no
+Answer int default 0,
+User_Comment varchar(255),
+primary key(UUID, Question_Nr),
+foreign key (UUID) references RAMP1_Input(UUID)
+);

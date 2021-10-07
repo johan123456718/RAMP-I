@@ -1,0 +1,23 @@
+create table users(
+username varchar(255) not null,
+password varchar(255) not null,
+primary key(username)
+);
+
+/*user ; password */
+insert into users( username, password) values(
+'user',
+'{bcrypt}$2a$10$FotsSyvAIVaGnOnP6U19fuHKhZ4LnzIB080dOiKc8Wpp3G3jJoP7m'
+);
+
+/*admin ; password */
+insert into users( username, password) values(
+'admin',
+'{bcrypt}$2a$10$SlpJL..TUT8JDi2HbKTITOu4ZnIrAXrjlF3zEj3k8olbkHJl/1JLO'
+);
+
+/*demo ; demo */
+insert into users( username, password) values(
+'demo',
+'{bcrypt}$2a$10$f2jQ2XfcEpoPZFo1UVS9ZOufeblSKebej17E.7n0mxPr108eytxZ2'
+);

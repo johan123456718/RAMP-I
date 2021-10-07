@@ -1,0 +1,248 @@
+
+/*Authors: Emil Fjellström, Johan Challita*/
+
+.title{
+
+    font-size: 18pt;
+    color: black;
+    font-weight: bold;
+}
+.body{
+    font-size: 16pt;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.flex-grid-intro {
+  display: flex;
+  background-color: white;
+}
+.flex-grid-intro .col-intro {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 50px;
+  flex: 1;
+}
+
+.flex-grid-intro .colRisk {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 98%;
+  max-height: auto;
+  flex: 1;
+}
+
+.flex-grid-intro .colRed {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 100px;
+  max-height: auto;
+  flex: 1;
+  background-color: #ff3300;
+}
+.flex-grid-intro .colGrey {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 100px;
+  max-height: auto;
+  flex: 1;
+  background-color: #d9d9d9;
+}
+.flex-grid-intro .colGreen {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 100px;
+  max-height: auto;
+  flex: 1;
+  background-color: #9bbb59;
+}
+
+.flex-grid-intro .col32 {
+  flex: 1;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.flex-grid-intro-thirds {
+  border: 5px dotted grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-grid-intro-thirds .col32 {
+  width: 32%;
+}
+
+
+@media (max-width: 576px) {
+  .flex-grid-intro,
+  .flex-grid-intro-thirds {
+    display: flex;
+    .col-intro{
+      width: 100%;
+      margin: 0 0 10px 0;
+      }
+    }
+  .col-intro .introTitle{
+    font-size: 12pt;
+  }
+  .col-intro .introBody{
+    font-size: 9pt;
+    padding: 5px;
+    margin: 0;
+  }
+  .col-intro .endingBody{
+    font-size: 9pt;
+  }
+  .colRisk .highRisk{
+    font-size: 9pt;
+    margin: 0;
+  }
+  .colRisk .furtherEval{
+    font-size: 9pt;
+    margin: 0;
+  }
+  .colRisk .lowRisk{
+    font-size: 9pt;
+    margin: 0;
+  }
+  .flex-grid-intro .colGrey {
+    border: 1px solid black;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: auto;
+    flex: 1;
+    background-color: silver;
+  }
+  .flex-grid-intro .colRed {
+    border: 1px solid black;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: auto;
+    flex: 1;
+    background-color: red;
+  }
+  .flex-grid-intro .colGreen {
+    border: 1px solid black;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: auto;
+    flex: 1;
+    background-color: green;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid-intro {
+  margin: 0 0 0 0;
+}
+
+
+
+
+
+
+
+.introColRisk{
+  margin-left: 25pt;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.introBody{
+    padding: 10px;
+    font-size: 12pt;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    color: black;
+    font-weight: normal;
+}
+
+.endingBody{
+    padding: 10px;
+    font-size: 12pt;
+    width: 100%;
+    margin: 0;
+    color: black;
+    font-weight: normal;
+}
+
+.introTitle{
+  padding: 10px;
+  font-size: 14pt;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+}
+
+.highRisk{
+    padding: 10px;
+    margin: 0;
+    font-size: 12pt;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: normal;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.furtherEval{
+    padding: 10px;
+    font-size: 12pt;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: normal;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.furtherEvalBody{
+    padding: 10px;
+    font-size: 12pt;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    color: black;
+    font-weight: normal;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lowRisk{
+    padding: 10px;
+    font-size: 12pt;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    color: black;
+    font-weight: normal;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

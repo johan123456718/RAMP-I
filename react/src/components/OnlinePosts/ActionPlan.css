@@ -1,0 +1,122 @@
+
+/*Authors: Emil Fjellström, Johan Challita*/
+
+.actionPlanImg{
+  max-height: 100%;
+  max-width: 100%;
+  float:left;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.actionPlanTableImg{
+  max-height: 100%;
+  max-width: 100%;
+  float:left;
+}
+
+.titleText{
+  padding: 15pt;
+  float:left;
+  margin: 0;
+  width:100%;
+  height: 10%;
+}
+
+.bodyText{
+  padding: 15pt;
+  margin: 0;
+  float:left;
+  width:100%;
+}
+
+.flex-grid-actionPlan-picture{
+  display: flex;
+  border: 1px solid black;
+}
+
+.flex-grid-actionPlan-picture .col-flex-actionPlan-picture{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    border: none;
+}
+
+.flex-grid-actionPlan-Table{
+  display: flex;
+  border: 1px solid black;
+}
+
+.flex-grid-actionPlan-Table .col-flex-actionPlan-Table{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    border: none;
+}
+
+.flex-grid-actionPlan-pictureBottom{
+  display: flex;
+  border: 1px solid black;
+}
+
+.flex-grid-actionPlan-pictureBottom .col-flex-actionPlan-pictureBottom{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .flex-grid-actionPlan-picture {
+      display: flex;
+      .col-flex-grid-actionPlan-picture {
+        flex: 1;
+        width: 100%;
+        border: none;
+      }
+  }
+  .actionPlanImg{
+    margin-right: 50%;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 576px) {
+    .flex-grid-actionPlan-Table {
+      display: flex;
+      .col-flex-grid-actionPlan-Table {
+        flex: 1;
+        width: 100%;
+      }
+  }
+  .bodyText{
+    padding: 8pt;
+    font-size: 9pt;
+  }
+  .titleText{
+    padding: 8pt;
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 576px) {
+    .flex-grid-actionPlan-pictureBottom {
+      display: flex;
+      .col-flex-grid-actionPlan-pictureBottom {
+        flex: 1;
+        width: 100%;
+        border: none;
+      }
+  }
+  .actionPlanTableImg{
+    width: 1000px;
+    height: 1700px;
+  }
+}

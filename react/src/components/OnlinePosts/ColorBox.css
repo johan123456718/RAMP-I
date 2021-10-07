@@ -1,0 +1,59 @@
+
+/*Authors: Emil Fjellström, Johan Challita*/
+
+.colRed {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  flex: 1;
+  background-color: #ff3300;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.colGrey {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  flex: 1;
+  background-color: #d9d9d9;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.colGreen {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  flex: 1;
+  background-color: #9bbb59;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.emptyCol{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  flex: 1;
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+@media (max-width: 576px){
+  .colRed {
+    border: 1px solid black;
+    min-height: 50px;
+  }
+  .colGrey {
+    border: 1px solid black;
+    min-height: 50px;
+  }
+  .colGreen {
+    border: 1px solid black;
+    min-height: 50px;
+  }
+  .emptyCol {
+    border: 1px solid black;
+    min-height: 50px;
+  }
+}

@@ -1,0 +1,370 @@
+create table Ramp1_Suggestion_Text(
+Suggestion_Text_Nr int auto_increment,
+Suggestion_Text_Type varchar(255) not null,
+Suggestion_Text_Data text(655365) not null,
+Suggestion_Category_Nr int not null,
+Suggestion_Question_Nr int not null,
+primary key(Suggestion_Text_Nr),
+foreign key(Suggestion_Category_Nr) references Ramp1_Suggestion_Category(Suggestion_Category_Nr),
+foreign key(Suggestion_Question_Nr) references Ramp1_Suggestion_Question(Suggestion_Question_Nr)
+);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Introducera tekniska lösningar som eliminerar eller reducerar den höga repetitiviteten. ', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Designa processflödet för smidigt arbetsflöde.', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Arbeta med organisatoriska förändringar. Arbeta med arbetstillfredsställelse och
+arbetsutvidgning för att utöka arbetscyklernas längd och minska mängden likartade
+arbetsrörelser i arbetscyklerna, vilket möjliggör återhämtning för utsatta kroppsdelar.
+Överväg även att reducera arbetstakten och att införa arbetsrotation. ', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ANST', 'Informera, utbilda och träna medarbetarna och säkerställ deras kunskap. ', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'V&S', 'Arbeta med mål, visioner och strategier för att minska riskerna för belastningsbesvär.
+', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'MILJÖ', 'Sträva mot smidig logistisk access, en layout som möjliggör lätta rörelser och förflyttningar
+och ett bra flöde samt se även över fysiska (t ex buller), termiska (t ex kyla/värme) och
+kemiska faktorer.
+', 1, 1);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sträva mot att eliminera de manuella lyften där de lyfta föremålens vikt överskrider 25 kg, t
+ex genom hel eller partiell automation. Introducering av lyft- och rotationsbord och liknande
+kan vara lämpliga åtgärder.', 2, 2);
+ 
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Introducera tekniska hjälpmedel för att minska vikten av föremål som hanteras av
+medarbetarna, eller designa stöd som minskar medarbetarnas belastning under hanteringen
+av föremålen. Lastbärare, såsom vagnar och truckar, kan vara lämpliga att använda.
+Alternativt kan en förändrad arbetsutformning vara aktuell, t ex genom utveckling av
+utrustning, maskiner och hjälpmedel och där föremålen skjuts, dras eller förmås glida på
+underlag med låg friktion och, om möjligt, med hjälp av teknisk utrustning.', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Introducera tekniska hjälpmedel för att transportera föremål så att den utvecklade kraftens
+storlek och tiden som föremålen hanteras av medarbetarna minskar. Ett annat förslag är att
+säkerställa att det är enkelt att visuellt inspektera och fysiskt känna att arbetet utförs korrekt ', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Överväg att minska vikten på de föremål som hanteras. Detta kan uppnås t ex genom att
+minska antalet komponenter i varje föremål. Ett annat sätt är att öka vikten av de föremål
+som hanteras så att lyfthjälpmedel definitivt behövs.', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Efterfråga och stöd användningen av lyftanordningar. Dessa bör vara utformade så att de är
+användarvänliga och inte ses som ett hinder. Ett sätt att åstadkomma detta är att engagera
+användarna i utformningen och i implementeringsprocessen.', 2, 2);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Överväg arbetsorganisatoriska förändringar, t ex arbetstillfredsställelse, arbetsutvidgning och
+arbetsrotation. En möjlighet är att kräva att tunga lyft utförs av två medarbetare. Undersök
+arbetets flöde och sträva mot att eliminera onödig materialhantering och materialtransport.
+Överväg även att reducera arbetstakten samt arbetsrotation. ', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ANST', 'Informera, utbilda och träna medarbetarna och säkerställ deras kunskap', 2, 2);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'V&S', 'Arbeta med mål, visioner och strategier för att minska riskerna för belastningsbesvär.', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'MILJÖ', 'Sträva mot smidig logistisk access, en layout som möjliggör lätta rörelser och förflyttningar
+och ett bra flöde samt se även över fysiska (t ex buller), termiska (t ex kyla/värme) och
+kemiska faktorer.', 2, 2);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sträva mot att vidareutveckla utrustningen, t ex med motoriserade lastbärare, så att de
+rekommenderade gränsvärdena inte överskrids, eller om transportsträckan är lång. Som ett
+alternativ kan skjuta- och dra-arbetet utföras av två medarbetare.', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Undersök lösningar med olika utformning av lastbärare, såsom hjultyp, material, dimension
+och utformning, hjul med enbart enkelriktad rörelse, svängbara eller vridbara hjul.
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Undersök och underhåll lastbärarna regelbundet för att säkerställa goda förutsättningar för
+hjulfunktion, friktion, vibration, etc
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Undersök lastbärarnas grepphöjd och säkerställ att denna är över knähöjd och under axelhöjd
+och helst nära armbågshöjd. Säkerställ också att greppet är bra sett ur ergonomiska aspekter
+(se manual*)
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Verka för rena, torra, icke-hala ytor. Ytor med låg friktion kan vara fördelaktiga för att
+reducera den erforderliga kraften, men kan medföra att underlaget blir halare. Införande av
+valsar eller “ball-mats” (kul-mattor) minskar friktionen och reducerar därmed den
+erforderliga kraftutvecklingen för att förflytta en lastbärare eller ett föremål.
+', 3, 3);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sträva mot att skjuta- och dra-arbetet genomförs med båda händerna samt att det inte utförs
+i sidled. Stäva också efter att undvika vridna arbetsställningar.
+', 3, 3);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Designa arbetsplatsen så att skjuta- och dra-arbetet kan utföras längs raka sträckor. Undersök
+även om transportsträckorna kan kortas.
+', 3, 3);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Överväg tekniska lösningar med motoriserade lastbärare så att ingen betydande manuell
+kraft behövs för att starta eller stoppa lastbäraren/föremålet.
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Överväg arbetsorganisatoriska förändringar, t ex arbetstillfredsställelse, arbetsutvidgning och
+arbetsrotation. 
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ANST', 'Informera, utbilda och träna medarbetarna och säkerställ deras kunskap.
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'S&V', 'Arbeta med mål, visioner och strategier för att minska riskerna för belastningsbesvär.
+', 3, 3);
+
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'MILJÖ', 'Sträva mot smidig logistisk access, en layout som möjliggör lätta rörelser och förflyttningar
+och ett bra flöde samt se även över fysiska (t ex buller), termiska (t ex kyla/värme) och
+kemiska faktorer.
+', 3, 3);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Välj verktyg med låga vibrationsnivåer.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sträva mot tekniska vibrationsisolerande lösningar, t ex genom förändrad utformning av
+verktyg och maskiner.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sök experthjälp för fördjupad undersökning och för designlösningar.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Överväg arbetsorganisatoriska förändringar, t ex arbetstillfredsställelse, arbetsutvidgning och
+arbetsrotation. 
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ANST', 'Informera, utbilda och träna medarbetarna och säkerställ deras kunskap.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'S&V', 'Arbeta med mål, visioner och strategier för att minska riskerna för belastningsbesvär.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'MILJÖ', 'Sträva mot smidig logistisk access, en layout som möjliggör lätta rörelser och förflyttningar
+och ett bra flöde samt se även över fysiska (t ex buller), termiska (t ex kyla/värme) och
+kemiska faktorer.
+', 4, 4);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Förändra utformningen av den maskinella utrustning som vibrationen härstammar ifrån, eller
+inför vibrationsisolerande lösningar, t ex vibrationsreducerande mattor eller säten.
+', 4, 5);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'T&D', 'Sök experthjälp för fördjupad undersökning och för designlösningar.
+', 4, 5);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ORG', 'Överväg arbetsorganisatoriska förändringar, t ex arbetstillfredsställelse, arbetsutvidgning och
+arbetsrotation. 
+', 4, 5);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'ANST', 'Informera, utbilda och träna medarbetarna och säkerställ deras kunskap.
+', 4, 5);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'V&S', 'Arbeta med mål, visioner och strategier för att minska riskerna för belastningsbesvär.
+', 4, 5);
+
+insert into Ramp1_Suggestion_Text(
+Suggestion_Text_Type,
+Suggestion_Text_Data,
+Suggestion_Category_Nr,
+Suggestion_Question_Nr
+)values( 'MILJÖ', 'Sträva mot smidig logistisk access, en layout som möjliggör lätta rörelser och förflyttningar
+och ett bra flöde samt se även över fysiska (t ex buller), termiska (t ex kyla/värme) och
+kemiska faktorer
+', 4, 5);
+

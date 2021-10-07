@@ -1,0 +1,172 @@
+
+/*Authors: Emil Fjellström, Johan Challita*/
+
+.accountTitleText{
+  margin: auto;
+  float:left;
+  width: auto;
+  height: auto;
+}
+
+.flex-grid-account{
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 18pt ! important;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  min-height: auto;
+  background-color: #dce6f1;
+  border: 1px solid black;
+}
+.flex-grid-account-button{
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 18pt ! important;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  min-height: auto;
+
+}
+
+.flex-grid-account-UUID{
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 18pt ! important;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  background-color: #dce6f1;
+  border: 1px solid black;
+}
+
+.flex-grid-account-UUID .col-flex-UUID{
+  display: 1;
+  width: 100%;
+}
+.flex-grid-account-button .col-flex-account-newButton{
+  display: 1;
+  width: 100%;
+}
+.flex-grid-account-button{
+  display: flex;
+
+}
+
+.mobileButton{
+  width: 25%;
+  min-width: 100px;
+  border: 1px solid black;
+  margin: 0;
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 15px ! important;
+}
+
+.mobileButtonDELUX{
+  width: 10%;
+  border: 1px solid black;
+  font-family: "Arial Bold", Gadget, sans-serif;
+       font-style: normal;
+       font-size: 15px ! important;
+}
+
+.account-button-grp{
+  display: 1;
+  width: 50%
+}
+.account-button-grp-single{
+  padding-left: 5px;
+  display: 1;
+  min-width: 5%
+}
+
+.accountButtonText{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-grid-account .col-flex-account{
+  flex: 1;
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  border: none;
+}
+
+.flex-grid-account-button .col-flex-account-button{
+  flex: 1;
+  width: 100%;
+  padding: 1px;
+  min-height: 50px;
+  border: none;
+}
+
+.btn-choiceButton{
+  display: flex;
+  box-shadow: none;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-color: #000000
+}
+.btn-choiceButton:focus,
+.btn-choiceButton.focus {
+    box-shadow: 0 0 0 .1rem #000080
+}
+.btn-choiceButton.disabled,
+.btn-choiceButton:disabled {
+    color: #000000;
+    background-color: #000000;
+    border-color: #000000
+}
+.btn-choiceButton.hover,
+.btn-choiceButton:hover {
+    color: #000000;
+    background-color: #88c4fc;
+    border-color: #003180
+}
+.btn-choiceButton:not(:disabled):not(.disabled):active,
+.btn-choiceButton:not(:disabled):not(.disabled).active,
+.show>.btn-choiceButton.dropdown-toggle {
+    color: #000000;
+    background-color: #88c4fc;
+    border-color: #003180;
+    box-shadow: none
+}
+.btn-choiceButton:not(:disabled):not(.disabled):active:focus,
+.btn-choiceButton:not(:disabled):not(.disabled).active:focus,
+.show>.btn-choiceButton.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .0rem #800000
+}
+
+
+.col-flex-32-button .btn-choiceButton:active{
+  border: 1px solid black;
+}
+
+@media (max-width: 576px) {
+  .mobileButton{
+    width: 50%;
+  }
+  .mobileButtonDELUX{
+    margin-left: 10px;
+    width: 25%;
+  }
+  .account-button-grp{
+    width: 100%
+  }
+  .account-button-grp-single{
+    padding-left: 0 ;
+  }
+  .flex-grid-account-UUID{
+    display: block;
+  }
+  .flex-grid-account-button{
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+create table Ramp1_Suggestion_Category(
+Suggestion_Category_Nr int auto_increment,
+Suggestion_Category_Title varchar(255),
+primary key(Suggestion_Category_Nr)
+);
+
+insert into ramp1_Suggestion_Category(
+Suggestion_Category_Title
+)values( '2.Arbetsrörelser och repetitivt arbete'
+);
+
+insert into ramp1_Suggestion_Category(
+Suggestion_Category_Title
+)values( '3.Lyftarbete'
+);
+
+insert into ramp1_Suggestion_Category(
+Suggestion_Category_Title
+)values( '4. Skjuta- och dra-arbete'
+);
+
+insert into ramp1_Suggestion_Category(
+Suggestion_Category_Title
+)values('5. Påverkande faktorer'
+);
